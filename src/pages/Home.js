@@ -7,7 +7,7 @@ const Home = () => {
   useEffect(() => {
     fetch("products.json")
       .then((res) => res.json())
-      .then((products) => setProducts(products));
+      .then((data) => setProducts(data));
   }, []);
 
   return (
